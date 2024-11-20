@@ -14,14 +14,38 @@ st.set_page_config(
 st.markdown("""
     <style>
     .metric-card {
-        background-color: #f0f2f6;
+        background-color: #1e1e1e;  /* Dark background */
+        color: #ffffff;  /* White text */
         padding: 20px;
         border-radius: 10px;
         margin: 10px 0;
     }
-    .high-probability { color: green; }
-    .medium-probability { color: orange; }
-    .low-probability { color: red; }
+    .metric-card h4 {
+        color: #ffffff;  /* White text for headers */
+        margin-bottom: 15px;
+    }
+    .metric-card p {
+        color: #ffffff;  /* White text for paragraphs */
+        margin: 5px 0;
+    }
+    .high-probability { 
+        color: #00ff00; 
+        background-color: rgba(0, 255, 0, 0.2);
+        padding: 2px 6px;
+        border-radius: 4px;
+    }
+    .medium-probability { 
+        color: #ffa500;
+        background-color: rgba(255, 165, 0, 0.2);
+        padding: 2px 6px;
+        border-radius: 4px;
+    }
+    .low-probability { 
+        color: #ff0000;
+        background-color: rgba(255, 0, 0, 0.2);
+        padding: 2px 6px;
+        border-radius: 4px;
+    }
     </style>
 """, unsafe_allow_html=True)
 
